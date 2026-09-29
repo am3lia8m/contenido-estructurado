@@ -1,13 +1,12 @@
-# prompt 1
+# Prompt
 
 Hola, estoy haciendo una pagina web sobre twenty one pilots y mi idea es basicamente hacer una encuesta que ya tengo planeada y que a partir de eso te recomiende canciones de twenty one pilots para escuchar dependiendo d como este tu estado de animo mas o menos en ese momento y es como para que la gente comience a eschar mas de top, necestio que me ayudes a recopilar informacion sobre twenty one pilots que me pueda ayudar
 
-# prompt 2
+# Prompt 2
 
 dame datos curiosos
 
-# prompt 3
-
+# Prompt 3
 Necesito organizar información sobre:
 
 twenty one pilots y la relacion entre emociones y sus canciones
@@ -40,8 +39,3 @@ No agregues diseño.
 No agregues CSS.
 No agregues JavaScript.
 Entrega el resultado en formato Markdown.
-
-# prompt 4
-
-dame una breve reseña que hable mas o menos de las emociones tratadas en los albumes
-

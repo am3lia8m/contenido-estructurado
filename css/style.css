@@ -1,134 +1,78 @@
-/*
-  ============================================================
-  TOKENS
-  ============================================================
-
-  Variables reutilizables para mantener un sistema visual
-  consistente en todo el documento.
-*/
-
+@import url("https://use.typekit.net/rac0pki.css");
 :root {
-  --color-background: #f4f4f0;
-  --color-text: #171717;
-  --color-accent: #5b3df5;
+    --font-size-base: 1.25rem;
+    --font-size-h1: 20vw;
+    --font-size-h2: 6vw;
+    --font-size-h3: 1.25rem;
+    --color-accent: #db2523;
+    --font-family-base: "antarctican-mono", sans-serif;
+    --font-family-heading: "dharma-gothic-c", sans-serif;
 
-  --font-family-base: system-ui, Arial, Helvetica, sans-serif;
-
-  --font-size-body: 1rem;
-  --font-size-h1: 3rem;
-  --font-size-h2: 2rem;
-  --font-size-h3: 1.25rem;
 }
 
-/*
-  ============================================================
-  SELECTOR UNIVERSAL
-  ============================================================
-  * funciona como un comodín.
-  Selecciona todos los elementos HTML.
-*/
-
-* {
-  box-sizing: border-box;
-  /*
-    Regla temporal para visualizar las cajas.
-    Puede eliminarse cuando ya no sea necesaria.
-  */
-  outline: 1px solid;
-}
-
-
-/*
-  ============================================================
-  BODY
-  ============================================================
-
-  Define el sistema visual base del documento.
-*/
 body {
-  margin: 0;
-
-  background-color: var(--color-background);
-  color: var(--color-text);
-
-  font-family: var(--font-family-base);
-  font-size: var(--font-size-body);
+    background: #f3ede1;
+    color: #181818;
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base); 
 }
-
-/*
-  ============================================================
-  JERARQUÍA TIPOGRÁFICA
-  ============================================================
-
-  HTML define la jerarquía.
-  CSS controla su representación visual.
-*/
-
+h1, h2, h3,h4, h5, h6 {
+    font-family: var(--font-family-heading);
+    color: var(--color-accent);
+    text-align: center;
+}
 h1 {
-  font-size: var(--font-size-h1);
+        background-color: #f3ede1;
+        color: #181818;
+    font-size: var(--font-size-h1);
+    margin: 0;
+
 }
 
 h2 {
-  font-size: var(--font-size-h2);
+    font-size: var(--font-size-h2);
+    font-family: var(--font-family-heading);
+     color: #181818;
+     text-align: left;
+    padding: 2rem;
 }
-
 h3 {
-  font-size: var(--font-size-h3);
+    font-size: var(--font-size-h3);
+    text-align: left;
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base); 
+    padding: 2rem;
+}
+.hero {
+    text-align: center;
 }
 
-
-/*
-  ============================================================
-  LINKS
-  ============================================================
-
-  El color de acento identifica enlaces y acciones.
-*/
-
-a {
-  color: var(--color-accent);
+.hero p {
+    font-size: 1.50rem;
+    width: 60%;
+    margin: 2rem auto;
+    font-weight: 600;
 }
 
-
-/*
-  ============================================================
-  CONTENEDOR PRINCIPAL
-  ============================================================
-
-  width:
-  ocupa una proporción del espacio disponible.
-
-  max-width:
-  evita que el contenido crezca demasiado.
-
-  margin: 0 auto:
-  distribuye el espacio horizontal y centra la caja.
-*/
-
-main {
-  width: 65%;
-  min-width: 290px;
-  max-width: 1240px;
-  margin: 0 auto;
+.hero h1 + p {
+    font-size: 1.50rem;
+    width: 60%;
+    margin: 0 auto;
+    font-weight: 600;
 }
 
+.hero h2 + p {
+     padding: 2rem;    
+    font-size: 1.50rem;
+        margin: 0 auto;
+        font-weight: 600;
+        text-align: left;
+    }
 
-/*
-  ============================================================
-  ESPACIADO BÁSICO
-  ============================================================
-*/
-
-header,
-main,
-footer {
-  padding: 2rem;
-}
-
-section {
-  margin-bottom: 3rem;
-}
-
-nav a {
-  margin-right: 1rem;
-}
+    .hero h3 + p {
+        padding: 2rem;    
+       font-size: 1.50rem;
+           margin: 0 auto;
+           font-weight: 600;
+           text-align: left;
+       }
