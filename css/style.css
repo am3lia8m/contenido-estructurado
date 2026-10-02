@@ -8,7 +8,7 @@
     --color-accent: #db2523;
     --font-family-base: "antarctican-mono", sans-serif;
     --font-family-heading: "dharma-gothic-c", sans-serif;
-
+    --color:var(--color-base);
 }
 html {
 scroll-behavior: smooth;
@@ -22,6 +22,8 @@ body {
     color: #181818;
     font-family: var(--font-family-base);
     font-size: var(--font-size-base);
+    padding: 0;
+    margin: 0;
 }
 
 h1,
@@ -48,7 +50,7 @@ h2 {
     font-family: var(--font-family-heading);
     color: #181818;
     text-align: left;
-    padding: 0rem;
+    padding: 2rem;
 }
 
 h3 {
@@ -60,12 +62,48 @@ h3 {
     margin: 0 auto;
 }
 
+h4 {
+    font-size: var(--font-size-h2);
+    font-family: var(--font-family-heading);
+    color: #f3ede1;
+    text-align: left;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+h5 {
+    text-align: left;
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    padding: 2rem;
+    margin: 0 auto;
+    color: #f3ede1;
+    background-color: #db2523;
+}
+
+h6 {
+    text-align: right;
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    padding: 2rem;
+    margin: 0 auto;
+    color: #f3ede1;
+}
+
+h7{
+    text-align: center;
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    padding: 2rem;
+    margin: 0 auto;
+}
+
 details ,footer p{
     font-family: var(--font-family-base);
     font-size: var(--font-size-base);
     padding: 1rem;
     background-color: #db2523;
-    border-radius: 1rem;
+    border-radius: 0rem;
     margin: 1rem;
     width: 60%;
     text-align: left;
@@ -104,11 +142,49 @@ details ,footer p{
     font-weight: 600;
     text-align: left;
     background-color: #db2523;
-    border-radius: 1rem;
+    border-radius: 0rem;
     width: 60%;
 }
 
 footer p {
     opacity: 0.5;
-    width: 100%;
+    width: 98%;
+    padding: 1rem ; 
+    margin: 1rem ;
+     border-radius: 1rem;
+}
+
+div#recomendadas  {
+    background-color: #181818;
+    color: #f3ede1;
+    padding: 1rem;
+    
+}
+
+.historia {
+    max-width: 5em;
+    margin: 0 auto;
+}
+
+a {
+    color: #f3ede1;
+    text-decoration: none;
+}
+
+.lol {
+    color: #181818;
+     text-decoration: underline;
+   
+}
+
+.canciones {
+    color: #f3ede1;
+    text-decoration: underline;
+    font-size: 1.25rem;
+}
+
+img {
+    width: 15%;
+    max-width: 50%;
+    height: auto;
 }
