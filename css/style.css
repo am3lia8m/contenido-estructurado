@@ -1,4 +1,5 @@
 @import url("https://use.typekit.net/rac0pki.css");
+
 :root {
     --font-size-base: 1.25rem;
     --font-size-h1: 20vw;
@@ -9,21 +10,34 @@
     --font-family-heading: "dharma-gothic-c", sans-serif;
 
 }
+html {
+scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+}
 
 body {
     background: #f3ede1;
     color: #181818;
     font-family: var(--font-family-base);
-    font-size: var(--font-size-base); 
+    font-size: var(--font-size-base);
 }
-h1, h2, h3,h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-family-heading);
     color: var(--color-accent);
     text-align: center;
 }
+
 h1 {
-        background-color: #f3ede1;
-        color: #181818;
+    background-color: #f3ede1;
+    color: #181818;
     font-size: var(--font-size-h1);
     margin: 0;
 
@@ -32,17 +46,31 @@ h1 {
 h2 {
     font-size: var(--font-size-h2);
     font-family: var(--font-family-heading);
-     color: #181818;
-     text-align: left;
-    padding: 2rem;
+    color: #181818;
+    text-align: left;
+    padding: 0rem;
 }
+
 h3 {
     font-size: var(--font-size-h3);
     text-align: left;
     font-family: var(--font-family-base);
-    font-size: var(--font-size-base); 
+    font-size: var(--font-size-base);
     padding: 2rem;
+    margin: 0 auto;
 }
+
+details ,footer p{
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    padding: 1rem;
+    background-color: #db2523;
+    border-radius: 1rem;
+    margin: 1rem;
+    width: 60%;
+    text-align: left;
+}
+
 .hero {
     text-align: center;
 }
@@ -54,25 +82,33 @@ h3 {
     font-weight: 600;
 }
 
-.hero h1 + p {
+.hero h1+p {
     font-size: 1.50rem;
     width: 60%;
     margin: 0 auto;
     font-weight: 600;
 }
 
-.hero h2 + p {
-     padding: 2rem;    
+.hero h2+p {
+    padding: 2rem;
     font-size: 1.50rem;
-        margin: 0 auto;
-        font-weight: 600;
-        text-align: left;
-    }
+    margin: 0 auto;
+    font-weight: 600;
+    text-align: left;
+}
 
-    .hero h3 + p {
-        padding: 2rem;    
-       font-size: 1.50rem;
-           margin: 0 auto;
-           font-weight: 600;
-           text-align: left;
-       }
+.hero h3+p {
+    padding: 2rem;
+    font-size: 1.50rem;
+    margin: 0 auto;
+    font-weight: 600;
+    text-align: left;
+    background-color: #db2523;
+    border-radius: 1rem;
+    width: 60%;
+}
+
+footer p {
+    opacity: 0.5;
+    width: 100%;
+}
